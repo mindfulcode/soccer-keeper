@@ -1,0 +1,19 @@
+{
+  "name": "soccer",
+  "version": "0.1.0",
+  "authors": [
+    "mindfulcode"
+  ],
+  "description": "Socccer coaches assistant",
+  "license": "ISC",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.7"
+  }
+}

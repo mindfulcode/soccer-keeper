@@ -1,0 +1,15 @@
+{
+  "name": "soccer",
+  "version": "0.1.0",
+  "description": "Coaches assistant for soccor games",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mindfulcode",
+  "license": "MIT",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "bower": "^1.4.1"
+  }
+}
