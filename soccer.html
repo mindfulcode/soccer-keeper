@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en" data-ng-app="soccerApp">
+
 <head>
 	<meta charset="utf-8">
 	<title>Soccer Assistant Demo App</title>
@@ -9,59 +10,62 @@
 	<script src="directives.js"></script>
 	<script src="filters.js"></script>
 </head>
+
 <body>
 	<h1>Soccer Keeper</h1>
 	<form data-ng-controller="SoccerController">
-		<table>
-			<tr>
-				<td colspan="2">
-					<button id="reset" data-ng-click="resettime()">Reset</button>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2">
-					<button id="time" class="timeisstopped" data-app-countdown-timer></button>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<button id="inc_min" data-ng-click="bumpminutes(1)">+M</button>
-					<button id="dec_min" data-ng-click="bumpminutes(-1)">-M</button>
-				</td>
-				<td>
-					<button id="inc_sec" data-ng-click="bumpseconds(1)">+S</button>
-					<button id="dec_sec" data-ng-click="bumpseconds(-1)">-S</button>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<p>Them</p>
-				</td>
-				<td>
-					<p>Us</P>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<p>{{scorethem}}</p>
-				</td>
-				<td>
-					<p>{{scoreus}}</P>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<button id="inc_them" data-ng-click="bumpscore('scorethem', 1)">+</button>
-					<button id="dec_them" data-ng-click="bumpscore('scorethem', -1)">-</button>
-				</td>
-				<td>
-					<button id="inc_us" data-ng-click="bumpscore('scoreus', 1)">+</button>
-					<button id="dec_us" data-ng-click="bumpscore('scoreus', -1)">-</button>
-				</td>
-			</tr>
+		<div>
+			<table>
+				<tr>
+					<td colspan="2">
+						<button id="reset" data-ng-click="resettime()">Reset</button>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<button id="time" class="timeisstopped" data-app-countdown-timer></button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button id="inc_min" data-ng-click="bumpminutes(1)">+M</button>
+						<button id="dec_min" data-ng-click="bumpminutes(-1)">-M</button>
+					</td>
+					<td>
+						<button id="inc_sec" data-ng-click="bumpseconds(1)">+S</button>
+						<button id="dec_sec" data-ng-click="bumpseconds(-1)">-S</button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Them</p>
+					</td>
+					<td>
+						<p>Us</P>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>{{scorethem}}</p>
+					</td>
+					<td>
+						<p>{{scoreus}}</P>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button class="score" id="inc_them" data-ng-click="bumpscore('scorethem', 1)">+</button>
+						<button class="score" id="dec_them" data-ng-click="bumpscore('scorethem', -1)">-</button>
+					</td>
+					<td>
+						<button class="score" id="inc_us" data-ng-click="bumpscore('scoreus', 1)">+</button>
+						<button class="score" id="dec_us" data-ng-click="bumpscore('scoreus', -1)">-</button>
+					</td>
+				</tr>
+			</table>
 
-			<br/>
 
+		</div>
 	</form>
 </body>
 

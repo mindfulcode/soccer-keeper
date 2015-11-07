@@ -2,10 +2,16 @@ body {
  margin: 0px;	
  font-family: "Arial";
  text-align: center;
+ background-color: gray;
 }
 
 h1 {
-	font-size: 1em;
+	font-size: 1.5em;
+}
+
+form {
+  margin: 0;
+  padding: 0;
 }
 
 button {
@@ -55,9 +61,15 @@ button#time.timeisrunning {
  background: green;
 }
 
+button.score {
+  width: 2em;
+}
+
 table {
 	text-align: center;
 		display: inline-block;
+    border-color: black;
+    border-width: 2px;  
 }
 td {
 	text-align: center;
